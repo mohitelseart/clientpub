@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/",(req,res)=>{
-    res.sendFile('home page')
+    res.end("home page")
 })
 app.use("/client",clientRouter)
 
